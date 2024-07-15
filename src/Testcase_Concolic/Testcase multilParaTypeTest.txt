@@ -1,0 +1,209 @@
+Testcase 0: sat
+(
+  (define-fun b () Int
+    35)
+  (define-fun a () Int
+    0)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 1: sat
+(
+  (define-fun b () Int
+    55)
+  (define-fun a () Int
+    0)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 2: sat
+(
+  (define-fun b () Int
+    25)
+  (define-fun a () Int
+    0)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 3: sat
+(
+  (define-fun b () Int
+    55)
+  (define-fun a () Int
+    40)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 4: sat
+(
+  (define-fun b () Int
+    55)
+  (define-fun a () Int
+    10)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 5: sat
+(
+  (define-fun b () Int
+    45)
+  (define-fun a () Int
+    30)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 6: sat
+(
+  (define-fun b () Int
+    45)
+  (define-fun a () Int
+    20)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 7: sat
+(
+  (define-fun b () Int
+    45)
+  (define-fun a () Int
+    10)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 8: sat
+(
+  (define-fun b () Int
+    35)
+  (define-fun a () Int
+    10)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 9: sat
+(
+  (define-fun b () Int
+    55)
+  (define-fun a () Int
+    30)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 10: sat
+(
+  (define-fun b () Int
+    55)
+  (define-fun a () Int
+    20)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 11: sat
+(
+  (define-fun b () Int
+    25)
+  (define-fun a () Int
+    10)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 12: sat
+(
+  (define-fun b () Int
+    35)
+  (define-fun a () Int
+    20)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 13: sat
+(
+  (define-fun a () Int
+    40)
+  (define-fun b () Int
+    54)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 14: sat
+(
+  (define-fun a () Int
+    20)
+  (define-fun b () Int
+    34)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 15: sat
+(
+  (define-fun a () Int
+    10)
+  (define-fun b () Int
+    24)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 16: sat
+(
+  (define-fun a () Int
+    50)
+  (define-fun b () Int
+    0)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 17: sat
+(
+  (define-fun a () Int
+    30)
+  (define-fun b () Int
+    44)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 18: sat
+(
+  (define-fun b () Int
+    45)
+  (define-fun a () Int
+    0)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 19: sat
+(
+  (define-fun b () Int
+    15)
+  (define-fun a () Int
+    0)
+  (define-fun c () Real
+    0.0)
+)
+
+Testcase 20: sat
+(
+  (define-fun a () Int
+    (- 10))
+  (define-fun b () Int
+    14)
+  (define-fun c () Real
+    0.0)
+)

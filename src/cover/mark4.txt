@@ -1,0 +1,20 @@
+                                                                                                                                                        statement${#line-of-block-in-function$1#opening-function$true
+                                                                                                                                                        line-in-function$2#offset$57#surrounding-control-block$if
+                                                                                                                                                        line-in-function$2#offset$61#statement$(a + b > c) && (a + c > b) && (b + c > a)#is_condition$false
+                                                                                                                                                        line-in-function$2#offset$61#statement$(a + b > c) && (a + c > b) && (b + c > a)#is_condition$true
+                                                                                                                                                        statement${#line-of-block-in-function$2
+                                                                                                                                                        line-in-function$3#offset$118#surrounding-control-block$if
+                                                                                                                                                        line-in-function$3#offset$122#statement$(a == b) && (b == c)#is_condition$false
+                                                                                                                                                        line-in-function$5#offset$218#surrounding-control-block$if
+                                                                                                                                                        line-in-function$5#offset$222#statement$(a == b) || (a == c) || (b == c)#is_condition$false
+                                                                                                                                                        line-in-function$12#offset$545#surrounding-control-block$if
+                                                                                                                                                        line-in-function$12#offset$549#statement$(a * a == b * b + c * c) || (b * b == a * a + c * c) || (c * c == a * a + b * b)#is_condition$false
+                                                                                                                                                        line-in-function$12#offset$549#statement$(a * a == b * b + c * c) || (b * b == a * a + c * c) || (c * c == a * a + b * b)#is_condition$true
+                                                                                                                                                        statement${#line-of-block-in-function$12
+                                                                                                                                                        line-in-function$13#offset$649#statement$System.out.println("Tam giác vuông!");
+                                                                                                                                                        statement$}#line-of-block-in-function$12
+                                                                                                                                                        statement$}#line-of-block-in-function$2
+                                                                                                                                                        statement$}#line-of-block-in-function$1
+
+
+

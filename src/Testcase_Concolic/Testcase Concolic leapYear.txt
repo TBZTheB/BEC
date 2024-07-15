@@ -1,0 +1,23 @@
+Testcase 0: sat
+(
+  (define-fun year () Int
+    100)
+)
+
+Testcase 1: sat
+(
+  (define-fun year () Int
+    1)
+)
+
+Testcase 2: sat
+(
+  (define-fun year () Int
+    0)
+)
+
+Testcase 3: sat
+(
+  (define-fun year () Int
+    4)
+)

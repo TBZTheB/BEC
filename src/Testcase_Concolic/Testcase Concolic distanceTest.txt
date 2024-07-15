@@ -1,0 +1,29 @@
+Testcase 0: sat
+(
+  (define-fun x () Real
+    (/ 1001.0 1000.0))
+)
+
+Testcase 1: sat
+(
+  (define-fun x () Real
+    (/ 200001.0 200000.0))
+)
+
+Testcase 2: sat
+(
+  (define-fun x () Real
+    (/ 999.0 1000.0))
+)
+
+Testcase 3: sat
+(
+  (define-fun x () Real
+    0.0)
+)
+
+Testcase 4: sat
+(
+  (define-fun x () Real
+    (/ 100001.0 100000.0))
+)

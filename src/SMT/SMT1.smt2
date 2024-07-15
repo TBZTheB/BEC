@@ -1,0 +1,8 @@
+(declare-fun a () Int)
+(declare-fun b () Int)
+(declare-fun c () Int)
+(assert ( <= b a ))
+(assert ( > c a ))
+(check-sat)
+(get-model)
+(exit)

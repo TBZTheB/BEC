@@ -1,0 +1,71 @@
+Testcase 0: sat
+(
+  (define-fun distance () Int
+    9)
+  (define-fun age () Int
+    60)
+)
+
+Testcase 1: sat
+(
+  (define-fun age () Int
+    14)
+  (define-fun distance () Int
+    0)
+)
+
+Testcase 2: sat
+(
+  (define-fun age () Int
+    60)
+  (define-fun distance () Int
+    11)
+)
+
+Testcase 3: sat
+(
+  (define-fun age () Int
+    16)
+  (define-fun distance () Int
+    11)
+)
+
+Testcase 4: sat
+(
+  (define-fun age () Int
+    0)
+  (define-fun distance () Int
+    0)
+)
+
+Testcase 5: sat
+(
+  (define-fun distance () Int
+    10)
+  (define-fun age () Int
+    5)
+)
+
+Testcase 6: sat
+(
+  (define-fun age () Int
+    16)
+  (define-fun distance () Int
+    10)
+)
+
+Testcase 7: sat
+(
+  (define-fun age () Int
+    16)
+  (define-fun distance () Int
+    0)
+)
+
+Testcase 8: sat
+(
+  (define-fun distance () Int
+    9)
+  (define-fun age () Int
+    5)
+)

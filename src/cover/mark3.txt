@@ -1,0 +1,12 @@
+statement${#line-of-block-in-function$1#opening-function$true
+line-in-function$2#offset$64#surrounding-control-block$if
+line-in-function$2#offset$68#statement$a <= 0 || b <= 0 || c <= 0#is_condition$false
+line-in-function$5#offset$158#surrounding-control-block$if
+line-in-function$5#offset$162#statement$a + b <= c || a + c <= b || b + c <= a#is_condition$false
+line-in-function$8#offset$264#surrounding-control-block$if
+line-in-function$8#offset$268#statement$a == b && b == c#is_condition$false
+line-in-function$8#offset$268#statement$a == b && b == c#is_condition$true
+statement${#line-of-block-in-function$8
+line-in-function$9#offset$300#statement$return "Tam giác đều";
+statement$}#line-of-block-in-function$8
+statement$}#line-of-block-in-function$1

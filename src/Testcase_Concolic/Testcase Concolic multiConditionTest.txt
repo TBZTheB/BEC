@@ -1,0 +1,71 @@
+Testcase 0: sat
+(
+  (define-fun x () Int
+    20)
+)
+
+Testcase 1: sat
+(
+  (define-fun x () Int
+    101)
+)
+
+Testcase 2: sat
+(
+  (define-fun x () Int
+    80)
+)
+
+Testcase 3: sat
+(
+  (define-fun x () Int
+    60)
+)
+
+Testcase 4: sat
+(
+  (define-fun x () Int
+    (- 8))
+)
+
+Testcase 5: sat
+(
+  (define-fun x () Int
+    1)
+)
+
+Testcase 6: sat
+(
+  (define-fun x () Int
+    65)
+)
+
+Testcase 7: sat
+(
+  (define-fun x () Int
+    (- 9))
+)
+
+Testcase 8: sat
+(
+  (define-fun x () Int
+    100)
+)
+
+Testcase 9: sat
+(
+  (define-fun x () Int
+    (- 4))
+)
+
+Testcase 10: sat
+(
+  (define-fun x () Int
+    (- 10))
+)
+
+Testcase 11: sat
+(
+  (define-fun x () Int
+    0)
+)
