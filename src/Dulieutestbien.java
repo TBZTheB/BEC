@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Dulieutestbien {
 
-    // Tính giai thừa của x
+    // factorial x
     /*
      * Source getting from website: https://www.geeksforgeeks.org/
      */
@@ -13,8 +13,9 @@ public class Dulieutestbien {
      * output: 1*2*3*4*...*x
      *
      * Error in function
-     * Number of error: 1
+     * Number of error: 3
      * if x=1 function will return unexpected result (1!=2)
+     * There are 2 invalid errors
      */
      // STT 1
     public static int factorial(int x) {
@@ -27,7 +28,7 @@ public class Dulieutestbien {
         }
         return res;
     }
-    // Chuyển đổi điểm trung bình thành ký tự
+    // grade
     // ****************************************************************************
     /*
      * intput : averageGrade
@@ -40,7 +41,8 @@ public class Dulieutestbien {
      * else, return I
      *
      * Error in function
-     * Number of error: 6
+     * Number of error: 8
+     * There are 2 invalid errors
      * if averageGrade is in {100,90,80,70,60,0} the function will return unexpected
      * result
      * 50 60 70
@@ -62,14 +64,14 @@ public class Dulieutestbien {
         return 'I'; // 'I' for invalid input
     }
 
-    // Tính giá vé dựa trên tuổi và khoảng cách
+    // getFare
     // ****************************************************************************
     /*
      * intput : age, distance
      * output: return integer number correspond to given age, distance
      *
      * Error in function
-     * Number of error: 4
+     * Number of error: 8
      * if age in {4, 14, 15}, distance=10 the function will return unexpected result
      * note: replace
      * //if(age >= 4 && age <= 14) by if(age > 4 && age < 14)
@@ -101,24 +103,24 @@ public class Dulieutestbien {
         return fare;
     }
 
-    // Tính i mũ j
+    // i4Power
     // D:\OneDrive - Cao Dang Su Pham Trung
     // Uong\NCS\ava\data-test\tsdv\Sample_for_R1_4\r85.cpp
     /*
-     * Error:
+     * Error: 6
      * Case 1
-     * Goc: i=0, j=0 thì return -1
-     * Sua: i>=0, j=0 thì return -1
-     * Ví dụ: 2^0=-1
+     * before: i=0, j=0 return -1
+     * after: i>=0, j=0  return -1
+     * exp: 2^0=-1
      *
      * Case 2
-     * Goc: i bat ky, j=1 thi return i
-     * Sua:
-     * i bat ky, j>=1 thi return i
-     * vi du: 2^3=2
-     * Co 2 loi voi cac bo test
+     * before:∀i j=1 return i
+     * after:
+     *  ∀i j>=1  return i
+     * exp: 2^3=2
+     * There are 2 errors with testsuite 
      * (i >=0; j=0)
-     * (i bat ky, j>=1)
+     * (∀i , j>=1)
      *
      */
     //STT 4
@@ -138,7 +140,7 @@ public class Dulieutestbien {
             } else {
                 value = 0;
             }
-        } else if (j == 0) { // j==0
+        } else if (j >= 0) { // j==0
             if (i == 0) {// i==0; add Error
                 // cerr << "\n";
                 // cerr << "I4_POWER - Fatal error!\n";
@@ -158,23 +160,23 @@ public class Dulieutestbien {
         }
         return value;
     }
-    // Phân loại dựa theo Math và English
-    /*
+    // MathEnglishGrade
+    /*Errors: 8
      * Type A: Math + English >=180 and Math >= 50 && English>=60
      * Type B: Math >= 80 || English >=90 and Math >=50 && English>=60
      * Type C: Math>=50 and English>=60 and not in Type A, Type B
      * Type D: Other
      * Code:
      * Add error at boundary,
-     * Math > 50 && English >60 thay vi Math >= 50 && English >=60
-     * Math > 80 || English >90 thay vi Math >= 80 || English >=90
+     * Math > 50 && English >60 instead of Math >= 50 && English >=60
+     * Math > 80 || English >90 instead of Math >= 80 || English >=90
      * Dead code: if (Math + English >=180) return 'A';
-     * Khong bao gio tra ve type 'A'
+     * never return type 'A'
      *
      */
     //STT 5
     public static char MathEnglishGrade(int Math, int English) {
-        //Loi ta cac truong hop Math=50, math=80, English=60, English=90
+        //Error in the cases Math=50, math=80, English=60, English=90
         //if(Math>=50 && English>=60)
         if (Math > 50 && English > 60) {
             //if(Math>=80 || English>=90)
@@ -189,8 +191,8 @@ public class Dulieutestbien {
         return 'D';
     }
 
-    // Kiểm tra xem ba số có tạo thành tam giác không
-    /*
+    // isTriangle
+    /*Errors : 7 
      * input: a,b,c
      * Should return 1, if a,b,c represent a Triangle, otherwise return 0;
      * Detail: a<b+c && b<a+c && c<a+b, EO: 1
@@ -199,8 +201,9 @@ public class Dulieutestbien {
      * Error in function
      * Number of errors: 1
      * if a=b+c or b= a+c, the function will return unexpected result
-     * Bo test a=b=1, c=0 se tim ra loi
-     */
+     * testsuit a=b=1, c=0 will find the errors 
+     * There are 6 errors invalid for 3 variables a,b,c 
+     */ 
     //STT 6
     public static int isTriangle(int a, int b, int c) {
         if ((a<=b+c) && (b<=a+c) && (c < a+b)) {
@@ -209,8 +212,8 @@ public class Dulieutestbien {
         return 0;
     }
     // ****************************************************************************
-    // Tính xác suất PDF
-    /*
+    // PDF
+    /* Errors：11
      * input: x,minn,maxx
      * Should return probability density function of the continuous uniform
      * distribution
@@ -224,18 +227,19 @@ public class Dulieutestbien {
         }
         return 1.0f / (maxx - minn);
     }
-
-    /*
+    
+    /* Foo
      * input: interger number a,b,c,d
      * output: float number
-     * Error:
+     * Error: 9
      * Function may will return unexpected result if a>0
+     * There are 8 invalid errors for 4 variables
      */
     //STT 8
     static float foo(int a, int b, int c, int d) {
         float e;
         if (a > 0)
-            return 0;  //Cay loi a==0 thanh a>=0. If a>0 Then UnExpected output
+            return 0;  //add error a==0 to a>=0. If a>0 Then UnExpected output
         int x = 0;
         if ((a == b) || (c == d)) {
             x = 1;
@@ -243,10 +247,15 @@ public class Dulieutestbien {
         e = 1 / x;
         return e;
     }
+    //CheckValidDate
     //STT 9
-    public static int CheckValidDate(int day, int month, int year) {// Tuong doi cham
-        // if (day>=1 && month>=1 && year>=1 && day<=31 && month<=12 && year<=2020) -->
-        // 6 loi
+    /*Errors : 12 
+     *  // if (day>=1 && month>=1 && year>=1 && day<=31 && month<=12 && year<=2020) -->
+     * 6 errors
+     * There are 6 invalid errors for 3 variables
+     */
+    public static int CheckValidDate(int day, int month, int year) {
+       
         if (day > 1 && month > 1 && year > 1 && day < 31 && month < 12 && year < 2020) {
             if ((month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
                     && (day <= 31))
@@ -263,13 +272,15 @@ public class Dulieutestbien {
 
     // ****************************************************************************
     /*
-     * Kiem tra 3 so nhap vao co tao thanh thoi gia hop le khong
+     * CheckValidTime
+     * errors: 12
      * input: hour, minute, second
      * output: return 1 if valid time; return 0 if invalid time
      * Error: replace if ((hour>=0 && hour<=23) && (minute>=0 && minute<=59) &&
      * (second>=0 && second<=59)) bo tat ca dau bang "=" trong dieu kien don
      * by if (hour>0 && hour<23 && minute>0 && minute<59 && second>0 && second<59)
-     */
+     * There are 6 invalid errors for 3 varialbe
+     */ 
     //STT 10
     public static int CheckValidTime(int hour, int minute, int second) {
         if (hour > 0 && hour < 23 && minute > 0 && minute < 59 && second > 0 && second < 59)
@@ -278,7 +289,8 @@ public class Dulieutestbien {
     }
     // ****************************************************************************
 
-    /*
+    /*divisionTest
+    * errors: 6
      * input: a,b
      * output: if a+b < -10, the function should return 1/(a+b)
      * if a+b = 0 or a+b+1 = 0, the function should return 0;
@@ -286,6 +298,7 @@ public class Dulieutestbien {
      * Error in function: 2
      * Number of mistakes: if a+b = 0 or a+b+10 = 0, the function may return
      * unexpected result;
+     * There are 4 invalid errors for 2 variable
      */
     //STT 11
     public static int divisionTest(int a, int b) {
@@ -299,9 +312,11 @@ public class Dulieutestbien {
     }
     // ****************************************************************************
 
-    /*
+    /*Forloop
+    * errors : 6
      * input: m, n
      * This function is created for loop testing.
+     * There are 4 invalid errors for 2 varialbe m,n. 
      */
     //STT 12
     public static int Forloop(int m, int n) {
@@ -316,6 +331,10 @@ public class Dulieutestbien {
         return s;
     }
     //STT 13
+    /* Errors : 3
+     * There are 2 invalid errors for x
+     * 
+     */
     public static double smallIntervalTest(double x) {
         if (x > 1.0) {
             if (x > 2.00001 && x < 2.000015) {
