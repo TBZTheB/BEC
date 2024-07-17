@@ -15,7 +15,7 @@ public class Dulieutestbien {
      * Error in function
      * Number of error: 3
      * if x=1 function will return unexpected result (1!=2)
-     * There are 2 invalid errors
+     * There are 2 invalid errors x < min int, x > max int
      */
      // STT 1
     public static int factorial(int x) {
@@ -42,7 +42,7 @@ public class Dulieutestbien {
      *
      * Error in function
      * Number of error: 8
-     * There are 2 invalid errors
+     * There are 2 invalid errors averageGrade < min int, averageGrade > max int
      * if averageGrade is in {100,90,80,70,60,0} the function will return unexpected
      * result
      * 50 60 70
@@ -77,6 +77,7 @@ public class Dulieutestbien {
      * //if(age >= 4 && age <= 14) by if(age > 4 && age < 14)
      * //if(age >= 15) by if(age > 15)
      * //if(distance > 10) by if(distance >= 10)
+     * There are 4 invalid errors age < min int, age > max int, distance < min int, distance > max int
      */
     //STT 3
     public static int getFare(int age, int distance) {
@@ -118,7 +119,7 @@ public class Dulieutestbien {
      * after:
      *  ∀i j>=1  return i
      * exp: 2^3=2
-     * There are 2 errors with testsuite 
+     * There are 2 errors with testsuite i,j < min int, i,j > max int
      * (i >=0; j=0)
      * (∀i , j>=1)
      *
@@ -172,6 +173,7 @@ public class Dulieutestbien {
      * Math > 80 || English >90 instead of Math >= 80 || English >=90
      * Dead code: if (Math + English >=180) return 'A';
      * never return type 'A'
+     * There are 4 invalid errors Math, English < min int, Math, English > max int
      *
      */
     //STT 5
@@ -202,7 +204,7 @@ public class Dulieutestbien {
      * Number of errors: 1
      * if a=b+c or b= a+c, the function will return unexpected result
      * testsuit a=b=1, c=0 will find the errors 
-     * There are 6 errors invalid for 3 variables a,b,c 
+     * There are 6 errors invalid for 3 variables a,b,c < min int, a,b,c > max int
      */ 
     //STT 6
     public static int isTriangle(int a, int b, int c) {
@@ -219,6 +221,7 @@ public class Dulieutestbien {
      * distribution
      * if maxx<minn or maxx=minn or x = maxx or x = minn the function may will
      * return unexpected result
+     * There are 6 invalid errors x,minn,maxx < min int, x,minn,maxx > max int
      */
     //STT 7
     public static float PDF(int x, int minn, int maxx) {
@@ -233,7 +236,7 @@ public class Dulieutestbien {
      * output: float number
      * Error: 9
      * Function may will return unexpected result if a>0
-     * There are 8 invalid errors for 4 variables
+     * There are 8 invalid errors for 4 variables : a,b,c,d < min int; a,b,c,d > max int
      */
     //STT 8
     static float foo(int a, int b, int c, int d) {
@@ -252,7 +255,7 @@ public class Dulieutestbien {
     /*Errors : 12 
      *  // if (day>=1 && month>=1 && year>=1 && day<=31 && month<=12 && year<=2020) -->
      * 6 errors
-     * There are 6 invalid errors for 3 variables
+     * There are 6 invalid errors for 3 variables: day, month, year < min int ; day, month, year > max int
      */
     public static int CheckValidDate(int day, int month, int year) {
        
@@ -279,7 +282,7 @@ public class Dulieutestbien {
      * Error: replace if ((hour>=0 && hour<=23) && (minute>=0 && minute<=59) &&
      * (second>=0 && second<=59)) bo tat ca dau bang "=" trong dieu kien don
      * by if (hour>0 && hour<23 && minute>0 && minute<59 && second>0 && second<59)
-     * There are 6 invalid errors for 3 varialbe
+     * There are 6 invalid errors for 3 varialbe: hour, minute,second < min int; hour,minute,second > max int
      */ 
     //STT 10
     public static int CheckValidTime(int hour, int minute, int second) {
@@ -298,7 +301,7 @@ public class Dulieutestbien {
      * Error in function: 2
      * Number of mistakes: if a+b = 0 or a+b+10 = 0, the function may return
      * unexpected result;
-     * There are 4 invalid errors for 2 variable
+     * There are 4 invalid errors for 2 variable: a,b < min int; a,b > max int
      */
     //STT 11
     public static int divisionTest(int a, int b) {
@@ -316,7 +319,7 @@ public class Dulieutestbien {
     * errors : 6
      * input: m, n
      * This function is created for loop testing.
-     * There are 4 invalid errors for 2 varialbe m,n. 
+     * There are 4 invalid errors for 2 varialbe m,n < min int; m,n max int
      */
     //STT 12
     public static int Forloop(int m, int n) {
@@ -332,7 +335,7 @@ public class Dulieutestbien {
     }
     //STT 13
     /* Errors : 3
-     * There are 2 invalid errors for x
+     * There are 2 invalid errors for x < min int, x > max int
      * 
      */
     public static double smallIntervalTest(double x) {
