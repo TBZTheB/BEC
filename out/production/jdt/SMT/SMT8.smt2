@@ -1,0 +1,7 @@
+(declare-fun i () Int)
+(declare-fun j () Int)
+(assert ( < j 0 ))
+(assert ( = i 1 ))
+(check-sat)
+(get-model)
+(exit)

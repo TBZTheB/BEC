@@ -1,0 +1,29 @@
+statement${#line-of-block-in-function$1#opening-function$true
+line-in-function$2#offset$53#statement$int e;
+line-in-function$3#offset$68#surrounding-control-block$if
+line-in-function$3#offset$71#statement$a == 0
+line-in-function$6#offset$120#statement$int x=0;
+line-in-function$7#offset$139#surrounding-control-block$if
+line-in-function$7#offset$142#statement$(a == c) || (c == d)
+line-in-function$7#offset$142#statement$(a == c) || (c == d)#is_condition$true
+statement${#line-of-block-in-function$7
+line-in-function$8#offset$177#statement$x=1;
+statement$}#line-of-block-in-function$7
+line-in-function$10#offset$202#statement$e=1 / x;
+line-in-function$11#offset$219#statement$return e;
+statement$}#line-of-block-in-function$1
+statement${#line-of-block-in-function$1#opening-function$true
+line-in-function$2#offset$64#surrounding-control-block$if
+line-in-function$2#offset$68#statement$a <= 0 || b <= 0 || c <= 0#is_condition$false
+line-in-function$5#offset$158#surrounding-control-block$if
+line-in-function$5#offset$162#statement$a + b <= c || a + c <= b || b + c <= a#is_condition$false
+line-in-function$8#offset$264#surrounding-control-block$if
+line-in-function$8#offset$268#statement$a == b && b == c#is_condition$false
+line-in-function$11#offset$341#surrounding-control-block$if
+line-in-function$11#offset$345#statement$a == b || a == c || b == c#is_condition$false
+line-in-function$14#offset$428#surrounding-control-block$if
+line-in-function$14#offset$432#statement$a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a#is_condition$false
+statement${#line-of-block-in-function$16
+line-in-function$17#offset$554#statement$return "Tam giác vuông";
+statement$}#line-of-block-in-function$16
+statement$}#line-of-block-in-function$1

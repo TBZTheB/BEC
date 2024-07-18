@@ -1,0 +1,7 @@
+{ --> int first=0; --> int second=1; --> while --> true --> { --> int next=first + second; --> if
+--> next > threshold --> first=second; --> second=next; --> } --> true --> { --> int next=first + second;
+--> if --> next > threshold --> first=second; --> second=next; --> } --> true --> {
+--> int next=first + second; --> if --> next > threshold --> first=second; --> second=next;
+--> } --> true --> { --> int next=first + second; --> if --> next > threshold --> {
+--> System.out.println("Số Fibonacci đầu tiên lớn hơn " + threshold + " là: "+ next);
+--> break; --> } --> } --> }

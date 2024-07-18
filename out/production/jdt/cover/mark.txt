@@ -1,0 +1,21 @@
+statement${#line-of-block-in-function$1#opening-function$true
+line-in-function$2#offset$41#statement$int n=2;
+line-in-function$3#offset$60#statement$int sum=0;
+line-in-function$5#offset$82#surrounding-control-block$if
+line-in-function$5#offset$88#statement$a > b#is_condition$false
+line-in-function$5#offset$88#statement$a > b#is_condition$true
+line-in-function$5#offset$115#statement$a + b < 9#is_condition$false
+statement${#line-of-block-in-function$7
+line-in-function$8#offset$187#statement$double k=2;
+statement$}#line-of-block-in-function$7
+line-in-function$11#offset$220#surrounding-control-block$for
+line-in-function$11#offset$224#statement$int i=1
+line-in-function$11#offset$235#statement$i < 2#is_condition$false
+line-in-function$11#offset$235#statement$i < 2#is_condition$true
+statement${#line-of-block-in-function$11
+line-in-function$12#offset$260#statement$sum++;
+statement$}#line-of-block-in-function$11
+line-in-function$11#offset$242#statement$i++
+line-in-function$11#offset$235#statement$i < 2#is_condition$false
+line-in-function$14#offset$286#statement$return sum;
+statement$}#line-of-block-in-function$1

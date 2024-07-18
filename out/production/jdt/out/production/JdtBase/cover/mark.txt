@@ -1,0 +1,39 @@
+statement${#line-of-block-in-function$1#opening-function$true
+line-in-function$2#offset$47#statement$int first=0;
+line-in-function$3#offset$70#statement$int second=1;
+line-in-function$5#offset$95#surrounding-control-block$while
+line-in-function$5#offset$102#statement$true
+statement${#line-of-block-in-function$5
+line-in-function$6#offset$122#statement$int next=first + second;
+line-in-function$8#offset$162#surrounding-control-block$if
+line-in-function$8#offset$166#statement$next > threshold
+line-in-function$13#offset$335#statement$first=second;
+line-in-function$14#offset$363#statement$second=next;
+statement$}#line-of-block-in-function$5
+line-in-function$5#offset$102#statement$true
+statement${#line-of-block-in-function$5
+line-in-function$6#offset$122#statement$int next=first + second;
+line-in-function$8#offset$162#surrounding-control-block$if
+line-in-function$8#offset$166#statement$next > threshold
+line-in-function$13#offset$335#statement$first=second;
+line-in-function$14#offset$363#statement$second=next;
+statement$}#line-of-block-in-function$5
+line-in-function$5#offset$102#statement$true
+statement${#line-of-block-in-function$5
+line-in-function$6#offset$122#statement$int next=first + second;
+line-in-function$8#offset$162#surrounding-control-block$if
+line-in-function$8#offset$166#statement$next > threshold
+line-in-function$13#offset$335#statement$first=second;
+line-in-function$14#offset$363#statement$second=next;
+statement$}#line-of-block-in-function$5
+line-in-function$5#offset$102#statement$true
+statement${#line-of-block-in-function$5
+line-in-function$6#offset$122#statement$int next=first + second;
+line-in-function$8#offset$162#surrounding-control-block$if
+line-in-function$8#offset$166#statement$next > threshold
+statement${#line-of-block-in-function$8
+line-in-function$9#offset$202#statement$System.out.println("Số Fibonacci đầu tiên lớn hơn " + threshold + " là: "+ next);
+line-in-function$10#offset$301#statement$break;
+statement$}#line-of-block-in-function$8
+statement$}#line-of-block-in-function$5
+statement$}#line-of-block-in-function$1

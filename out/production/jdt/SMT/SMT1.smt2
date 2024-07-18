@@ -1,0 +1,7 @@
+(declare-fun x () Int)
+(assert ( > x 1 ))
+(assert ( <= 2 x ))
+(assert ( <= 3 x ))
+(check-sat)
+(get-model)
+(exit)
