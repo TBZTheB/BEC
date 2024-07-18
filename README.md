@@ -13,12 +13,20 @@ This README provides instructions for installing and running the BEC tool. You h
 2. Building the code and running it directly.
 
 # Option 1: Running the Precompiled JAR File 
-## Step 1: Download the JAR File
-Download the precompiled JAR file from the following Google Drive link: 
+## Step 1: Clone the Repository
+Clone the repository containing the BEC tool source code. Use the following command:
+
+    git clone https://github.com/TBZTheB/BEC.git
+
+## Step 2: Download the JAR File
+Replace `project-directory` with the actual path to the cloned repository.
+
+    cd <project-directory>
+Download the precompiled JAR files from the following Google Drive link: 
 
 [Download BEC Tool JAR](https://drive.google.com/drive/folders/1BvjrVmqXaOsYuQZuyGl9bSjDB_3cb3GB)
 
-Create a directory and move the downloaded JAR file into this directory.
+Move the downloaded JAR files into `project-directory`.
 ## Step 2: Run the JAR File
 Once downloaded, open Terminal/cmd and navigate to the project's directory. Run the following command, replacing `filename.jar` with the actual name of the JAR file you downloaded:
 
@@ -35,14 +43,14 @@ Clone the repository containing the BEC tool source code. Use the following comm
     git clone https://github.com/TBZTheB/BEC.git
 
 ## Step 2: Navigate to the Project Directory
-Replace <project-directory> with the actual path to the cloned repository.
+Replace `project-directory` with the actual path to the cloned repository.
 
     cd <project-directory>
 
 ## Step 3: Compile the Code
 
 ## Step 4: Run the Main Class in IntelliJ IDEA
-After compiling, navigate to the `src` directory where the files are located.
+After compiling, navigate to the `JstBase\src` directory where the files are located.
 Run the main method in the files 
 - Choose the method and coverage level you want to run:
     - BEC Method:
