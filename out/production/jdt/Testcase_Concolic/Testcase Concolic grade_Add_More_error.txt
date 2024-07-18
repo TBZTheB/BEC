@@ -1,0 +1,72 @@
+public static char grade(int averageGrade) {
+        if (averageGrade > 90 && averageGrade <= 100)
+            return 'A';
+        else if (averageGrade > 80 && averageGrade <= 90)
+            return 'B';
+        else if (averageGrade > 70 && averageGrade <= 80)
+            return 'C';
+        else if (averageGrade > 60 && averageGrade <= 68) {
+            if (averageGrade + 4 == 69) return 'A';
+            return 'D';
+        }
+        else if (averageGrade >= 0 && averageGrade <= 60)
+            return 'F';
+        return 'I'; // 'I' for invalid input
+    }
+
+Number of Testcases: 9
+Testcase 0: sat
+(
+  (define-fun averageGrade () Int
+    71)
+)
+
+Testcase 1: sat
+(
+  (define-fun averageGrade () Int
+    0)
+)
+
+Testcase 2: sat
+(
+  (define-fun averageGrade () Int
+    65)
+)
+
+Testcase 3: sat
+(
+  (define-fun averageGrade () Int
+    91)
+)
+
+Testcase 4: sat
+(
+  (define-fun averageGrade () Int
+    81)
+)
+
+Testcase 5: sat
+(
+  (define-fun averageGrade () Int
+    69)
+)
+
+Testcase 6: sat
+(
+  (define-fun averageGrade () Int
+    101)
+)
+
+Testcase 7: sat
+(
+  (define-fun averageGrade () Int
+    (- 1))
+)
+
+Testcase 8: sat
+(
+  (define-fun averageGrade () Int
+    61)
+)
+
+Execution time: 6322ms

@@ -1,0 +1,46 @@
+Number of Testcases: 7
+Testcase 0: sat
+(
+  (define-fun averageGrade () Int
+    71)
+)
+
+Testcase 1: sat
+(
+  (define-fun averageGrade () Int
+    0)
+)
+
+Testcase 2: sat
+(
+  (define-fun averageGrade () Int
+    1)
+)
+
+Testcase 3: sat
+(
+  (define-fun averageGrade () Int
+    91)
+)
+
+Testcase 4: sat
+(
+  (define-fun averageGrade () Int
+    81)
+)
+
+Testcase 5: sat
+(
+  (define-fun averageGrade () Int
+    101)
+)
+
+Testcase 6: sat
+(
+  (define-fun averageGrade () Int
+    61)
+)
+
+Execution time: 5830ms
+
+Process finished with exit code 0

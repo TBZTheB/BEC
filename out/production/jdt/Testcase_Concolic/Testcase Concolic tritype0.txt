@@ -1,0 +1,119 @@
+Testcase 0: sat
+(
+  (define-fun k () Int
+    (- 1))
+  (define-fun j () Int
+    (- 3))
+  (define-fun i () Int
+    (- 1))
+)
+
+Testcase 1: sat
+(
+  (define-fun k () Int
+    (- 3))
+  (define-fun j () Int
+    (- 1))
+  (define-fun i () Int
+    (- 1))
+)
+
+Testcase 2: sat
+(
+  (define-fun k () Int
+    (- 2))
+  (define-fun j () Int
+    (- 1))
+  (define-fun i () Int
+    (- 1))
+)
+
+Testcase 3: sat
+(
+  (define-fun i () Int
+    (- 1))
+  (define-fun j () Int
+    0)
+  (define-fun k () Int
+    0)
+)
+
+Testcase 4: sat
+(
+  (define-fun k () Int
+    (- 1))
+  (define-fun j () Int
+    (- 1))
+  (define-fun i () Int
+    (- 1))
+)
+
+Testcase 5: sat
+(
+  (define-fun i () Int
+    0)
+  (define-fun j () Int
+    0)
+  (define-fun k () Int
+    0)
+)
+
+Testcase 6: sat
+(
+  (define-fun k () Int
+    (- 1))
+  (define-fun i () Int
+    (- 2))
+  (define-fun j () Int
+    (- 1))
+)
+
+Testcase 7: sat
+(
+  (define-fun k () Int
+    (- 1))
+  (define-fun i () Int
+    (- 3))
+  (define-fun j () Int
+    (- 1))
+)
+
+Testcase 8: sat
+(
+  (define-fun k () Int
+    2)
+  (define-fun i () Int
+    (- 1))
+  (define-fun j () Int
+    1)
+)
+
+Testcase 9: sat
+(
+  (define-fun k () Int
+    (- 1))
+  (define-fun j () Int
+    (- 2))
+  (define-fun i () Int
+    (- 1))
+)
+
+Testcase 10: sat
+(
+  (define-fun k () Int
+    2)
+  (define-fun i () Int
+    3)
+  (define-fun j () Int
+    1)
+)
+
+Testcase 11: sat
+(
+  (define-fun k () Int
+    4)
+  (define-fun i () Int
+    2)
+  (define-fun j () Int
+    3)
+)

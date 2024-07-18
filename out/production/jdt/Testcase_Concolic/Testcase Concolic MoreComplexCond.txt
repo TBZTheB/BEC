@@ -1,0 +1,181 @@
+Testcase 0: sat
+(
+  (define-fun c () Int
+    4)
+  (define-fun a () Int
+    1)
+  (define-fun b () Int
+    2)
+  (define-fun d () Int
+    0)
+  (define-fun e () Int
+    0)
+)
+
+Testcase 1: sat
+(
+  (define-fun a () Int
+    0)
+  (define-fun b () Int
+    0)
+  (define-fun c () Int
+    0)
+  (define-fun d () Int
+    0)
+  (define-fun e () Int
+    0)
+)
+
+Testcase 2: sat
+(
+  (define-fun d () Int
+    0)
+  (define-fun c () Int
+    4)
+  (define-fun b () Int
+    5)
+  (define-fun e () Int
+    9)
+  (define-fun a () Int
+    9)
+)
+
+Testcase 3: sat
+(
+  (define-fun d () Int
+    0)
+  (define-fun c () Int
+    4)
+  (define-fun a () Int
+    6)
+  (define-fun b () Int
+    5)
+  (define-fun e () Int
+    5)
+)
+
+Testcase 4: sat
+(
+  (define-fun d () Int
+    0)
+  (define-fun c () Int
+    4)
+  (define-fun a () Int
+    8)
+  (define-fun b () Int
+    5)
+  (define-fun e () Int
+    9)
+)
+
+Testcase 5: sat
+(
+  (define-fun d () Int
+    0)
+  (define-fun c () Int
+    4)
+  (define-fun a () Int
+    1)
+  (define-fun b () Int
+    5)
+  (define-fun e () Int
+    5)
+)
+
+Testcase 6: sat
+(
+  (define-fun d () Int
+    0)
+  (define-fun c () Int
+    4)
+  (define-fun b () Int
+    5)
+  (define-fun e () Int
+    8)
+  (define-fun a () Int
+    8)
+)
+
+Testcase 7: sat
+(
+  (define-fun a () Int
+    1)
+  (define-fun c () Int
+    4)
+  (define-fun b () Int
+    3)
+  (define-fun d () Int
+    0)
+  (define-fun e () Int
+    0)
+)
+
+Testcase 8: sat
+(
+  (define-fun d () Int
+    0)
+  (define-fun c () Int
+    4)
+  (define-fun a () Int
+    1)
+  (define-fun b () Int
+    5)
+  (define-fun e () Int
+    0)
+)
+
+Testcase 9: sat
+(
+  (define-fun d () Int
+    0)
+  (define-fun c () Int
+    5)
+  (define-fun a () Int
+    9)
+  (define-fun b () Int
+    6)
+  (define-fun e () Int
+    6)
+)
+
+Testcase 10: sat
+(
+  (define-fun d () Int
+    0)
+  (define-fun c () Int
+    4)
+  (define-fun b () Int
+    5)
+  (define-fun e () Int
+    10)
+  (define-fun a () Int
+    10)
+)
+
+Testcase 11: sat
+(
+  (define-fun a () Int
+    1)
+  (define-fun c () Int
+    3)
+  (define-fun b () Int
+    0)
+  (define-fun d () Int
+    0)
+  (define-fun e () Int
+    0)
+)
+
+Testcase 12: sat
+(
+  (define-fun d () Int
+    6)
+  (define-fun a () Int
+    1)
+  (define-fun c () Int
+    4)
+  (define-fun b () Int
+    5)
+  (define-fun e () Int
+    0)
+)

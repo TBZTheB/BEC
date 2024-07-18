@@ -1,10 +1,7 @@
+import java.util.Scanner;
+
 public class DataTest {
 
-<<<<<<<< HEAD:DataTest.java
-========
-public class Dulieutestbien {
-
->>>>>>>> 70f8de09b4e6dde14180bb8beb2eeee5efa0fc2b:JdtBase/src/DataTest.java
     // factorial x
     /*
      * Source getting from website: https://www.geeksforgeeks.org/
@@ -20,7 +17,7 @@ public class Dulieutestbien {
      * if x=1 function will return unexpected result (1!=2)
      * There are 2 invalid errors x < min int, x > max int
      */
-    // STT 1
+     // STT 1
     public static int factorial(int x) {
         if (x <= 1) {// x<=1, error
             return 1;
@@ -197,11 +194,7 @@ public class Dulieutestbien {
     }
 
     // isTriangle
-<<<<<<<< HEAD:DataTest.java
-    /*Errors : 7
-========
     /*Errors : 7 
->>>>>>>> 70f8de09b4e6dde14180bb8beb2eeee5efa0fc2b:JdtBase/src/DataTest.java
      * input: a,b,c
      * Should return 1, if a,b,c represent a Triangle, otherwise return 0;
      * Detail: a<b+c && b<a+c && c<a+b, EO: 1
@@ -210,15 +203,9 @@ public class Dulieutestbien {
      * Error in function
      * Number of errors: 1
      * if a=b+c or b= a+c, the function will return unexpected result
-<<<<<<<< HEAD:DataTest.java
-     * testsuit a=b=1, c=0 will find the errors
-     * There are 6 errors invalid for 3 variables a,b,c < min int, a,b,c > max int
-     */
-========
      * testsuit a=b=1, c=0 will find the errors 
      * There are 6 errors invalid for 3 variables a,b,c < min int, a,b,c > max int
      */ 
->>>>>>>> 70f8de09b4e6dde14180bb8beb2eeee5efa0fc2b:JdtBase/src/DataTest.java
     //STT 6
     public static int isTriangle(int a, int b, int c) {
         if ((a<=b+c) && (b<=a+c) && (c < a+b)) {
@@ -243,11 +230,7 @@ public class Dulieutestbien {
         }
         return 1.0f / (maxx - minn);
     }
-<<<<<<<< HEAD:DataTest.java
-
-========
     
->>>>>>>> 70f8de09b4e6dde14180bb8beb2eeee5efa0fc2b:JdtBase/src/DataTest.java
     /* Foo
      * input: interger number a,b,c,d
      * output: float number
@@ -269,21 +252,13 @@ public class Dulieutestbien {
     }
     //CheckValidDate
     //STT 9
-<<<<<<<< HEAD:DataTest.java
-    /*Errors : 12
-========
     /*Errors : 12 
->>>>>>>> 70f8de09b4e6dde14180bb8beb2eeee5efa0fc2b:JdtBase/src/DataTest.java
      *  // if (day>=1 && month>=1 && year>=1 && day<=31 && month<=12 && year<=2020) -->
      * 6 errors
      * There are 6 invalid errors for 3 variables: day, month, year < min int ; day, month, year > max int
      */
     public static int CheckValidDate(int day, int month, int year) {
-<<<<<<<< HEAD:DataTest.java
-
-========
        
->>>>>>>> 70f8de09b4e6dde14180bb8beb2eeee5efa0fc2b:JdtBase/src/DataTest.java
         if (day > 1 && month > 1 && year > 1 && day < 31 && month < 12 && year < 2020) {
             if ((month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
                     && (day <= 31))
@@ -308,11 +283,7 @@ public class Dulieutestbien {
      * (second>=0 && second<=59)) bo tat ca dau bang "=" trong dieu kien don
      * by if (hour>0 && hour<23 && minute>0 && minute<59 && second>0 && second<59)
      * There are 6 invalid errors for 3 varialbe: hour, minute,second < min int; hour,minute,second > max int
-<<<<<<<< HEAD:DataTest.java
-     */
-========
      */ 
->>>>>>>> 70f8de09b4e6dde14180bb8beb2eeee5efa0fc2b:JdtBase/src/DataTest.java
     //STT 10
     public static int CheckValidTime(int hour, int minute, int second) {
         if (hour > 0 && hour < 23 && minute > 0 && minute < 59 && second > 0 && second < 59)
@@ -322,11 +293,7 @@ public class Dulieutestbien {
     // ****************************************************************************
 
     /*divisionTest
-<<<<<<<< HEAD:DataTest.java
-     * errors: 6
-========
     * errors: 6
->>>>>>>> 70f8de09b4e6dde14180bb8beb2eeee5efa0fc2b:JdtBase/src/DataTest.java
      * input: a,b
      * output: if a+b < -10, the function should return 1/(a+b)
      * if a+b = 0 or a+b+1 = 0, the function should return 0;
@@ -349,11 +316,7 @@ public class Dulieutestbien {
     // ****************************************************************************
 
     /*Forloop
-<<<<<<<< HEAD:DataTest.java
-     * errors : 6
-========
     * errors : 6
->>>>>>>> 70f8de09b4e6dde14180bb8beb2eeee5efa0fc2b:JdtBase/src/DataTest.java
      * input: m, n
      * This function is created for loop testing.
      * There are 4 invalid errors for 2 varialbe m,n < min int; m,n max int
@@ -373,11 +336,7 @@ public class Dulieutestbien {
     //STT 13
     /* Errors : 3
      * There are 2 invalid errors for x < min int, x > max int
-<<<<<<<< HEAD:DataTest.java
-     *
-========
      * 
->>>>>>>> 70f8de09b4e6dde14180bb8beb2eeee5efa0fc2b:JdtBase/src/DataTest.java
      */
     public static double smallIntervalTest(double x) {
         if (x > 1.0) {
@@ -392,32 +351,4 @@ public class Dulieutestbien {
         return 4;
     }
 
-    // D:\OneDrive - Cao Dang Su Pham Trung
-    // Uong\NCS\ava\data-test\tsdv\Sample_for_R1_4
-
-    // Da them 4 loi
-    // Loi tai age=4,14,15, distance=10
-    //STT 3
-    public static int getFare1(int age, int distance) {
-        // Da them 4 loi
-        // Loi tai age=4,14,15, distance=10
-        int fare = 0;
-        if (age > 4 && age < 14) {// if(age >= 4 && age <= 14), 2 loi
-            if (distance >= 10) {// if(distance > 10), 1 loi
-                fare = 130;
-            } else {
-                fare = 100;
-            }
-        }
-        if (age > 15) {// (age >= 15) , 1 loi
-            if (distance < 10 && age >= 60) {
-                fare = 160;
-            } else if (distance > 10 && age < 60) {
-                fare = 250;
-            } else {
-                fare = 200;
-            }
-        }
-        return fare;
-    }
 }

@@ -1,0 +1,129 @@
+Testcase 0: sat
+(
+  (define-fun j () Real
+    (/ 1.0 4.0))
+  (define-fun k () Real
+    (/ 1.0 2.0))
+  (define-fun i () Real
+    (/ 3.0 8.0))
+)
+
+Testcase 1: sat
+(
+  (define-fun j () Real
+    (/ 1.0 2.0))
+  (define-fun k () Real
+    (/ 1.0 4.0))
+  (define-fun i () Real
+    (/ 1.0 4.0))
+)
+
+Testcase 2: sat
+(
+  (define-fun j () Real
+    (/ 1.0 4.0))
+  (define-fun k () Real
+    (/ 1.0 4.0))
+  (define-fun i () Real
+    (/ 1.0 2.0))
+)
+
+Testcase 3: sat
+(
+  (define-fun i () Real
+    0.0)
+  (define-fun j () Real
+    0.0)
+  (define-fun k () Real
+    0.0)
+)
+
+Testcase 4: sat
+(
+  (define-fun j () Real
+    1.0)
+  (define-fun k () Real
+    0.0)
+  (define-fun i () Real
+    1.0)
+)
+
+Testcase 5: sat
+(
+  (define-fun j () Real
+    (/ 1.0 2.0))
+  (define-fun k () Real
+    (/ 3.0 4.0))
+  (define-fun i () Real
+    (/ 1.0 2.0))
+)
+
+Testcase 6: sat
+(
+  (define-fun j () Real
+    (/ 3.0 2.0))
+  (define-fun k () Real
+    (/ 1.0 2.0))
+  (define-fun i () Real
+    (/ 1.0 2.0))
+)
+
+Testcase 7: sat
+(
+  (define-fun j () Real
+    0.0)
+  (define-fun i () Real
+    1.0)
+  (define-fun k () Real
+    0.0)
+)
+
+Testcase 8: sat
+(
+  (define-fun j () Real
+    (/ 1.0 2.0))
+  (define-fun k () Real
+    (/ 1.0 2.0))
+  (define-fun i () Real
+    (/ 3.0 2.0))
+)
+
+Testcase 9: sat
+(
+  (define-fun j () Real
+    (/ 1.0 2.0))
+  (define-fun k () Real
+    (/ 1.0 2.0))
+  (define-fun i () Real
+    (/ 1.0 4.0))
+)
+
+Testcase 10: sat
+(
+  (define-fun j () Real
+    (/ 1.0 2.0))
+  (define-fun k () Real
+    (/ 1.0 2.0))
+  (define-fun i () Real
+    (/ 1.0 2.0))
+)
+
+Testcase 11: sat
+(
+  (define-fun j () Real
+    (/ 1.0 4.0))
+  (define-fun k () Real
+    (/ 1.0 2.0))
+  (define-fun i () Real
+    (/ 1.0 2.0))
+)
+
+Testcase 12: sat
+(
+  (define-fun j () Real
+    (/ 1.0 4.0))
+  (define-fun k () Real
+    (/ 1.0 2.0))
+  (define-fun i () Real
+    (/ 1.0 4.0))
+)

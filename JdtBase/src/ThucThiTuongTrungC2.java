@@ -9,7 +9,6 @@ import mark.Utils;
 import org.eclipse.jdt.core.dom.*;
 import symbolicExecution.SymbolicExecutionTestpath;
 
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -20,48 +19,31 @@ import java.util.Stack;
 
 public class ThucThiTuongTrungC2 extends Object implements IJdtParser  {
 	public static void main(String[] args) throws IOException{
-//		long startTime = System.currentTimeMillis();
+		long startTime = System.currentTimeMillis();
 
 		// Lấy bộ nhớ sử dụng ban đầu
 		Runtime runtime = Runtime.getRuntime();
 		runtime.gc(); // Gọi Garbage Collector để giải phóng bộ nhớ không sử dụng
 		double startMemory = runtime.totalMemory() - runtime.freeMemory();
 
-		String filePath = "JdtBase/src/Test.java";
-		new ThucThiTuongTrungC2(filePath);
+		String currentPath = Paths.get("").toAbsolutePath().toString();
+		String filePath = currentPath + "\\Test.java";
 
 		new ASTAnalyzer(filePath);
-
+		new ThucThiTuongTrungC2(filePath);
 
 		// Kết thúc thời gian
-//		long endTime = System.currentTimeMillis();
+		long endTime = System.currentTimeMillis();
 
 		// Lấy bộ nhớ sử dụng sau khi chạy chương trình
 		double endMemory = runtime.totalMemory() - runtime.freeMemory();
 
 		// Tính toán thời gian chạy và bộ nhớ sử dụng
-//		long timeElapsed = endTime - startTime;
+		long timeElapsed = endTime - startTime;
 		double memoryUsed = (endMemory - startMemory) / 1048576;
-//		System.out.println("Thời gian chạy: " + timeElapsed  + " milliseconds");
-		System.out.println("Bộ nhớ sử dụng: " + memoryUsed  + " bytes");
-		try {
-			// Tạo đối tượng FileWriter với tên tệp tin
-			FileWriter fileWriter = new FileWriter("JdtBase/src/dungluong.txt", true);
+		System.out.println("Time for test data generation: " + timeElapsed  + " milliseconds");
+		System.out.println("Use memory: " + memoryUsed  + " bytes");
 
-			// Sử dụng BufferedWriter để ghi dữ liệu
-			BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-
-			// Ghi dữ liệu vào tệp tin
-			bufferedWriter.write( String.valueOf(memoryUsed) );
-			bufferedWriter.newLine();
-
-			// Đóng BufferedWriter để hoàn tất việc ghi
-			bufferedWriter.close();
-
-			System.out.println("Dữ liệu đã được ghi vào tệp tin thành công.");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 	}
 
 	public ThucThiTuongTrungC2(String filePath) {
@@ -401,7 +383,7 @@ public class ThucThiTuongTrungC2 extends Object implements IJdtParser  {
 				testpathGen.generateTestpaths();
 
 				FullTestpaths testpaths = testpathGen.getPossibleTestpaths();
-
+				List<String> testcases = new ArrayList<>();
 
 				for (int i = 0; i < testpaths.size(); i++){
 					if(!checkCoveredC2Testpath(conditionsNodeC2, testpaths.getTestpathAt(i).getAllCfgNodes())){
@@ -455,18 +437,18 @@ public class ThucThiTuongTrungC2 extends Object implements IJdtParser  {
 							}
 
 							if(!result.contains("error")){
-								System.out.println(result);
+								testcases.add(result);
 								updateCoveredC2Testpath(conditionsNodeC2, testpaths.getTestpathAt(i).getAllCfgNodes());
-								for (NodeCondition nodeCondition : conditionsNodeC2){
-//									System.out.println(nodeCondition.getNode().getContent() + ": "  + nodeCondition.isTrueNode() + " " + nodeCondition.isFalseNode());
-								}
 							}
 						}
 
 					}
 				}
 
-				System.out.println("Độ phủ của bộ test: " + getCovered(conditionsNodeC2));
+				System.out.println("Number of test cases of Concolic method: " + testcases.size());
+				System.out.println("List of testcase: \n" + testcases);
+				System.out.println();
+				System.out.println("Coverage of the test case set: " + getCovered(conditionsNodeC2) + "%");
 
 				int startPosition = node.getStartPosition();
 				int endPosition = startPosition + node.getLength();

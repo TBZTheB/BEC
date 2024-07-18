@@ -1,17 +1,15 @@
 import mark.Utils;
 import org.eclipse.jdt.core.dom.*;
-import org.eclipse.jdt.core.dom.ASTVisitor;
-import org.eclipse.jdt.core.dom.MethodDeclaration;
-import org.eclipse.jdt.core.dom.SingleVariableDeclaration;
-import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.*;
 
 public class ASTAnalyzer {
 
     public static void main(String[] args) throws IOException {
-        String filePath = "Dulieutestbien.java";
+        String filePath = "DataTest.java";
         String source = readFileToString(filePath);
         parse(source);
     }
@@ -36,11 +34,10 @@ public class ASTAnalyzer {
             @Override
             public boolean visit(MethodDeclaration method) {
                 long start = System.currentTimeMillis();
-                System.out.println("Method: " + method.getName());
+//                System.out.println("Method: " + method.getName());
                 Map<String, List<Number>> variableBounds = new LinkedHashMap<>();
                 Map<String, String> variableTypes = new LinkedHashMap<>();
                 List<SingleVariableDeclaration> parameters = method.parameters();
-                System.out.println("Parameters: " + parameters);
                 for (SingleVariableDeclaration param : parameters) {
 //                    System.out.println("Param: " + param.getName().getIdentifier() + " " + param.getType().toString());
                     String varName = param.getName().getIdentifier();
@@ -156,11 +153,11 @@ public class ASTAnalyzer {
                     if (varType != null) {
                         bounds.add(getMinMValueOfType(varType));
                         bounds.add(getMaxPValueOfType(varType));
-                        System.out.println("MinMValue: " + getMinMValueOfType(varType));
-                        System.out.println("MaxPValue: " + getMaxPValueOfType(varType));
+//                        System.out.println("MinMValue: " + getMinMValueOfType(varType));
+//                        System.out.println("MaxPValue: " + getMaxPValueOfType(varType));
                         if (varType.equals("float") || varType.equals("double")) {
                             bounds.add(getMinDValueOfType(varType));
-                            System.out.println("MinDValue: " + getMinDValueOfType(varType));
+//                            System.out.println("MinDValue: " + getMinDValueOfType(varType));
                         }
                     }
                     //Remove duplicates and sort the bounds
@@ -190,10 +187,11 @@ public class ASTAnalyzer {
                         testCases.add(testCase);
                     }
                 }
-                System.out.println("Number of test cases: " + testCases.size());
+                System.out.println("Number of test cases of BVA & ECP: " + testCases.size());
+                System.out.println("Parameters: " + parameters);
                 System.out.println("Test cases: " + testCases);
-                long end = System.currentTimeMillis();
-                System.out.println("Time: " + (end - start) + "ms");
+                System.out.println();
+                System.out.println();
                 return super.visit(method);
             }
         });

@@ -1,0 +1,180 @@
+Testcase Concolic CheckValidDate
+Testcase 0: sat
+(
+  (define-fun day () Int
+    2)
+  (define-fun year () Int
+    2)
+  (define-fun month () Int
+    10)
+)
+
+Testcase 1: sat
+(
+  (define-fun day () Int
+    2)
+  (define-fun year () Int
+    2)
+  (define-fun month () Int
+    8)
+)
+
+Testcase 2: sat
+(
+  (define-fun day () Int
+    1)
+  (define-fun month () Int
+    0)
+  (define-fun year () Int
+    0)
+)
+
+Testcase 3: sat
+(
+  (define-fun day () Int
+    2)
+  (define-fun year () Int
+    2)
+  (define-fun month () Int
+    5)
+)
+
+Testcase 4: sat
+(
+  (define-fun day () Int
+    2)
+  (define-fun year () Int
+    2)
+  (define-fun month () Int
+    3)
+)
+
+Testcase 5: sat
+(
+  (define-fun day () Int
+    2)
+  (define-fun year () Int
+    2)
+  (define-fun month () Int
+    2)
+)
+
+Testcase 6: sat
+(
+  (define-fun day () Int
+    28)
+  (define-fun year () Int
+    2)
+  (define-fun month () Int
+    2)
+)
+
+Testcase 7: sat
+(
+  (define-fun day () Int
+    2)
+  (define-fun year () Int
+    2)
+  (define-fun month () Int
+    11)
+)
+
+Testcase 8: sat
+(
+  (define-fun day () Int
+    2)
+  (define-fun year () Int
+    2)
+  (define-fun month () Int
+    7)
+)
+
+Testcase 9: sat
+(
+  (define-fun day () Int
+    2)
+  (define-fun year () Int
+    2)
+  (define-fun month () Int
+    9)
+)
+
+Testcase 10: sat
+(
+  (define-fun year () Int
+    2)
+  (define-fun day () Int
+    2)
+  (define-fun month () Int
+    12)
+)
+
+Testcase 11: sat
+(
+  (define-fun month () Int
+    2)
+  (define-fun day () Int
+    2)
+  (define-fun year () Int
+    1)
+)
+
+Testcase 12: sat
+(
+  (define-fun day () Int
+    2)
+  (define-fun year () Int
+    2020)
+  (define-fun month () Int
+    2)
+)
+
+Testcase 13: sat
+(
+  (define-fun year () Int
+    2)
+  (define-fun month () Int
+    2)
+  (define-fun day () Int
+    29)
+)
+
+Testcase 14: sat
+(
+  (define-fun day () Int
+    2)
+  (define-fun month () Int
+    1)
+  (define-fun year () Int
+    0)
+)
+
+Testcase 15: sat
+(
+  (define-fun day () Int
+    2)
+  (define-fun year () Int
+    2)
+  (define-fun month () Int
+    6)
+)
+
+Testcase 16: sat
+(
+  (define-fun day () Int
+    2)
+  (define-fun year () Int
+    2)
+  (define-fun month () Int
+    4)
+)
+
+Testcase 17: sat
+(
+  (define-fun day () Int
+    31)
+  (define-fun month () Int
+    2)
+  (define-fun year () Int
+    2)
+)

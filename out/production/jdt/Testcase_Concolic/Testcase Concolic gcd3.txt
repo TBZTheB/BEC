@@ -1,0 +1,33 @@
+Testcase 0: sat
+(
+  (define-fun b () Int
+    0)
+  (define-fun a () Int
+    0)
+)
+
+Testcase 1: sat
+(
+  (define-fun b () Int
+    2)
+  (define-fun a () Int
+    1)
+  (define-fun div0 ((x!0 Int) (x!1 Int)) Int
+    0)
+  (define-fun mod0 ((x!0 Int) (x!1 Int)) Int
+    0)
+)
+
+Testcase 2: sat
+(
+  (define-fun b () Int
+    4)
+  (define-fun a () Int
+    (- 3))
+  (define-fun div0 ((x!0 Int) (x!1 Int)) Int
+    (ite (and (= x!0 1) (= x!1 4)) 0
+      (- 1)))
+  (define-fun mod0 ((x!0 Int) (x!1 Int)) Int
+    (ite (and (= x!0 4) (= x!1 0)) 3
+      0))
+)
