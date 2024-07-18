@@ -29,7 +29,7 @@ public class ThucThiTuongTrungC2 extends Object implements IJdtParser  {
 		String currentPath = Paths.get("").toAbsolutePath().toString();
 		String filePath = currentPath + "\\Test.java";
 
-		new ASTAnalyzer(filePath);
+		new ASTAnalyzerBVA(filePath);
 		new ThucThiTuongTrungC2(filePath);
 
 		// Kết thúc thời gian

@@ -45,7 +45,6 @@ public class CFGGeneration implements ICFGGeneration {
         }
         CFG result = new CFG(statementList, functionNode);
         result.setRoot(this._BEGIN);
-        System.out.println("Finished generating CFG! Statement size: " + result.statements().size());
         return result;
     }
 
@@ -106,24 +105,18 @@ public class CFGGeneration implements ICFGGeneration {
             } else if (checkNumber.size() != 0) {
                 if ((checkNumber.get(count) == i) && (checkStatus.get(count) == "Continue")) {
                     this.visitStatementBreConRet((Statement) children.get(i), points[i], points[i + 1], endNode);
-                    if (count >= checkNumber.size() - 1) {
-                        System.out.println("no count ++ ");
-                    } else {
+                    if (!(count >= checkNumber.size() - 1)) {
                         count++;
                     }
                 } else if ((checkNumber.get(count) == i) && (checkStatus.get(count) == "Break")) {
                     this.visitStatementBreConRet((Statement) children.get(i), points[i], points[i + 1], otherNode);
-                    if (count >= checkNumber.size() - 1) {
-                        System.out.println("no count ++ ");
-                    } else {
+                    if (!(count >= checkNumber.size() - 1)) {
                         count++;
                     }
                 } else if ((checkNumber.get(count) == i) && (checkStatus.get(count) == "Return")) {
 
                     this.visitStatementBreConRet((Statement) children.get(i), points[i], points[i + 1], this._END);
-                    if (count >= checkNumber.size() - 1) {
-                        System.out.println("no count ++ ");
-                    } else {
+                    if (!(count >= checkNumber.size() - 1)) {
                         count++;
                     }
                 } else {

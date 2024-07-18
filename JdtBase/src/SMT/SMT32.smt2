@@ -1,5 +1,6 @@
 (declare-fun averageGrade () Int)
-(assert ( <= averageGrade 90 ))
+(assert ( > averageGrade 90 ))
+(assert ( > averageGrade 100 ))
 (assert ( <= averageGrade 80 ))
 (assert ( <= averageGrade 70 ))
 (assert ( <= averageGrade 60 ))
