@@ -41,7 +41,7 @@ Replace <project-directory> with the actual path to the cloned repository.
 
 ## Step 3: Compile the Code
 
-## Step 4: Run the Main Class
+## Step 4: Run the Main Class in IntelliJ IDEA
 After compiling, navigate to the `src` directory where the files are located.
 Run the main method in the files 
 - Choose the method and coverage level you want to run:
